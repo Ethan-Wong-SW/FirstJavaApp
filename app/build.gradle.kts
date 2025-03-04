@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.myapplication"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.myapplication"
@@ -32,7 +32,9 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.appcompat.v170)
+    implementation(libs.core.ktx)
+    implementation(libs.activity.v1101)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
